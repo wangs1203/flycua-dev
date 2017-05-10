@@ -1,0 +1,38 @@
+/** h5主色 **/
+@mainColor:#f63939;
+/** 浅灰色背景色 **/
+@grayColor:#eeeeee;
+/** 深灰色字体颜色 **/
+@fontColor:#505050;
+/** 布局测试颜色 **/
+@testColor:blue;
+
+/**设置文字颜色为主体颜色 **/
+.setMainColor{
+  color: @mainColor !important;
+}
+/** flex设置内容帖底部 **/
+.setContentBottom{
+  align-items: flex-end !important;
+}
+/** flex设置内容贴顶部 **/
+.setContentTop{
+  align-items: flex-start !important;
+}
+/*1px线*/
+
+._line-fine::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+/**  **/
