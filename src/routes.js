@@ -1,14 +1,14 @@
 // ---------------------------------- 禁止按需加载的组件  -----------------------------------------------------//
 //机场列表
-import airportList from './components/airportList'
+import airportList from './components/airportList';
 //日历控件
-import calendar from './components/calendar'
+import calendar from './components/calendar';
 //首页
-import home from './views/home'
+import home from './views/home';
 //登录页
-import loginPage from './views/login/login'
+import loginPage from './views/login/login';
 // 机票查询页
-import flightQuery from './views/book/flightQuery'
+import flightQuery from './views/book/flightQuery';
 // ---------------------------------- 禁止按需加载的组件结束  -----------------------------------------------------//
 
   export default [

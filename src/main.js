@@ -27,7 +27,7 @@ const router = new VueRouter({
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   }
-})
+});
 
 //配置全局钩子用来拦截非登录状态下的路由跳转
 router.beforeEach((to, from, next) => {
@@ -46,7 +46,7 @@ router.beforeEach((to, from, next) => {
   }
   //判断当前登录状态是前进还是后退
 
-})
+});
 
 //配置全局钩子，设置返回路径至全局状态管理backpath
 router.afterEach((to, from) => {
@@ -55,7 +55,7 @@ router.afterEach((to, from) => {
   //动态设置微信title
   // let title = to.name;
   // setWechatTitle(title)
-})
+});
 
 sync(store, router);
 
@@ -63,4 +63,4 @@ const app = new Vue({
   router,
   store,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');
